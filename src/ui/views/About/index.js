@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from '../../shared/componentsTitle';
-import Subtitle from '../../shared/componentsSubtitle';
-import Topics from '../../shared/componentsTopics';
+import Title from '../../shared/components/Title';
+import Subtitle from '../../shared/components/Subtitle';
+import Topics from '../../shared/components/Topics';
 
 const experiences = [
   'Desenvolvedor React | React-Native | Node - Oi',
@@ -11,9 +11,9 @@ const experiences = [
 ];
 
 const formations = [
-  'Bootcamp Node, React, React-Native (RocketSeat)',
-  'Nanodegree React (Udacity)',
-  'Bacharel em Ciências da Computação (UNIFEG)',
+  'Bootcamp: Node, React, React-Native (RocketSeat)',
+  'Nanodegree: React (Udacity)',
+  'Bacharel: Ciências da Computação (UNIFEG)',
 ];
 
 const socialMedias = [
