@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from '../Title'
-import Subtitle from '../Subtitle'
-import Topics from '../Topics'
+import Title from '../../shared/componentsTitle'
+import Subtitle from '../../shared/componentsSubtitle'
+import Topics from '../../shared/componentsTopics'
 
 const experiences = [
   "Desenvolvedor React | React-Native | Node - Oi",
