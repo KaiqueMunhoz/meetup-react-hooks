@@ -1,10 +1,12 @@
 import React from 'react';
-import NavBar from './ui/shared/components/NavBar';
+
+//Views
 import About from './ui/views/About';
+import Motivations from './ui/views/Motivations';
+
+//Components
+import NavBar from './ui/shared/components/NavBar';
 import Line from './ui/shared/components/Line';
-import Motivations from './ui/shared/components/Motivations';
-import Skills from './ui/shared/components/Skills';
-import Interests from './ui/shared/components/Interests';
 
 const App = () => (
   <>
@@ -14,9 +16,6 @@ const App = () => (
       <Line />
       <Motivations />
       <Line />
-      <Skills />
-      <Line />
-      <Interests />
     </div>
   </>
 );
