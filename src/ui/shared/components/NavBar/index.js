@@ -3,7 +3,7 @@ import profileImage from '../../images/profile.png';
 
 const sections = [
   [
-    { content: 'SOBRE', href: '#about' },
+    { content: 'SOBRE MIM', href: '#about' },
     { content: 'MOTIVAÇÕES', href: '#experience' },
     { content: 'USO', href: '#use' },
     { content: 'REGRAS', href: '#rules' },
@@ -11,6 +11,10 @@ const sections = [
   [
     { content: 'useState', href: '#useState' },
     { content: 'useEffect', href: '#useEffect' },
+  ],
+  [
+    { content: 'useMemo', href: '#useMemo' },
+    { content: 'useCallback', href: '#useCallback' },
   ],
   [
     { content: 'useReducer', href: '#useReducer' },
@@ -28,8 +32,11 @@ const NavBar = () => (
     className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
     id="sideNav"
   >
-    <a className="navbar-brand" href="#page-top">
-      <span className="d-block d-lg-none">Kaique Munhoz</span>
+    <div className="navbar-brand d-none d-lg-block">
+      <h3 className="lighteen-primary">React Hooks</h3>
+    </div>
+    <div className="navbar-brand">
+      <span className="d-block d-lg-none">React Hooks</span>
       <span className="d-none d-lg-block">
         <img
           className="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -37,7 +44,8 @@ const NavBar = () => (
           alt="profile"
         />
       </span>
-    </a>
+    </div>
+
     <button
       className="navbar-toggler"
       type="button"
