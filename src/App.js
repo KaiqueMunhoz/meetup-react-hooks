@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './ui/shared/components/NavBar';
-import About from './ui/shared/components/About';
+import About from './ui/views/About';
 import Line from './ui/shared/components/Line';
 import Experience from './ui/shared/components/Experience';
 import Skills from './ui/shared/components/Skills';
