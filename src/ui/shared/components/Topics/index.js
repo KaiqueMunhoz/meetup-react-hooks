@@ -9,6 +9,7 @@ const Topics = ({title, topics}) => (
         </li>
       ))}
     </ul>
+    <br />
   </>
 );
 export default Topics
