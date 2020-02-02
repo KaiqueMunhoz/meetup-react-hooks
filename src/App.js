@@ -3,7 +3,6 @@ import NavBar from './ui/shared/components/NavBar'
 import About from './ui/shared/components/About'
 import Line from './ui/shared/components/Line'
 import Experience from './ui/shared/components/Experience'
-import Education from './ui/shared/components/Education'
 
 function App() {
   return (
@@ -13,8 +12,6 @@ function App() {
       <About />
       <Line />
       <Experience />
-      <Line />
-      <Education />
       <Line />
 
       <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
