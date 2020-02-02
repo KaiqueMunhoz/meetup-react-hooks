@@ -36,7 +36,7 @@ const NavBar = () => (
         </li>
         <li className="nav-item">
           <a className="nav-link js-scroll-trigger" href="#experience">
-            Experience
+            Motivations
           </a>
         </li>
         <li className="nav-item">
