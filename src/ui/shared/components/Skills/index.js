@@ -1,4 +1,12 @@
 import React from 'react';
+import Topics from '../Topics'
+
+const topics = [
+  "Mobile-First, Responsive Design", 
+  "Cross Browser Testing Debugging", 
+  "Cross Functional Teams", 
+  "Agile Development Scrum"
+]
 
 const Skills = () =>  (
   <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
@@ -44,23 +52,8 @@ const Skills = () =>  (
         <i className="fab fa-npm"></i>
       </li>
     </ul>
-
-    <div className="subheading mb-3">Workflow</div>
-    <ul className="fa-ul mb-0">
-      <li>
-        <i className="fa-li fa fa-check"></i>
-        Mobile-First, Responsive Design</li>
-      <li>
-        <i className="fa-li fa fa-check"></i>
-        Cross Browser Testing &amp; Debugging</li>
-      <li>
-        <i className="fa-li fa fa-check"></i>
-        Cross Functional Teams</li>
-      <li>
-        <i className="fa-li fa fa-check"></i>
-        Agile Development &amp; Scrum</li>
-    </ul>
-  </div>
+    <Topics title="Workflow" topics={topics}/>
+    </div>
 </section>
 );
 
