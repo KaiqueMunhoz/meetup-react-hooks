@@ -76,7 +76,7 @@ const NavBar = () => (
                     );
                   })}
                 {index != lastSection && (
-                  <span className="dashed">----------------</span>
+                  <span className="lighteen-primary">--------------------</span>
                 )}
               </>
             );
