@@ -8,6 +8,7 @@ import UseState from './ui/views/UseState';
 import UseEffect from './ui/views/UseEffect';
 import UseMemo from './ui/views/UseMemo';
 import UseCallback from './ui/views/UseCallback';
+import UseReducer from './ui/views/UseReducer';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -30,6 +31,8 @@ const App = () => (
       <UseMemo />
       <Line />
       <UseCallback />
+      <Line />
+      <UseReducer />
       <Line />
     </div>
   </>
