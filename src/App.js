@@ -7,6 +7,7 @@ import Rules from './ui/views/Rules';
 import UseState from './ui/views/UseState';
 import UseEffect from './ui/views/UseEffect';
 import UseMemo from './ui/views/UseMemo';
+import UseCallback from './ui/views/UseCallback';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -27,6 +28,8 @@ const App = () => (
       <UseEffect />
       <Line />
       <UseMemo />
+      <Line />
+      <UseCallback />
       <Line />
     </div>
   </>
