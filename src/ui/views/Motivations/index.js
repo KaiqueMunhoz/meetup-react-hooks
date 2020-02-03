@@ -1,6 +1,7 @@
 import React from 'react';
 
 // Components
+import Section from '../../shared/components/Section';
 import Motivation from './Motivation';
 
 const motivations = [
@@ -22,26 +23,20 @@ const motivations = [
 ];
 
 const Motivations = () => (
-  <section
-    className="resume-section p-3 p-lg-5 d-flex justify-content-center"
-    id="experience"
-  >
-    <div className="w-100">
-      <h2 className="mb-5">Motivação</h2>
-      {motivations &&
-        motivations.map(motivation => {
-          const { title, subtitle, description } = motivation;
-          return (
-            <Motivation
-              title={title}
-              subtitle={subtitle}
-              description={description}
-            />
-          );
-        })}
-      <Motivation />
-    </div>
-  </section>
+  <Section id="motivations" title="Motivação">
+    {motivations &&
+      motivations.map(motivation => {
+        const { title, subtitle, description } = motivation;
+        return (
+          <Motivation
+            title={title}
+            subtitle={subtitle}
+            description={description}
+          />
+        );
+      })}
+    <Motivation />
+  </Section>
 );
 
 export default Motivations;
