@@ -74,7 +74,7 @@ const NavBar = () => (
                       </li>
                     );
                   })}
-                {index != lastSection && (
+                {index !== lastSection && (
                   <span className="lighteen-primary">--------------------</span>
                 )}
               </>
