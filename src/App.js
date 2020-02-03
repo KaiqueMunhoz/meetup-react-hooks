@@ -11,6 +11,7 @@ import UseCallback from './ui/views/UseCallback';
 import UseReducer from './ui/views/UseReducer';
 import UseSelector from './ui/views/UseSelector';
 import UseDispatch from './ui/views/UseDispatch';
+import CustomHooks from './ui/views/CustomHooks';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -39,6 +40,8 @@ const App = () => (
       <UseSelector />
       <Line />
       <UseDispatch />
+      <Line />
+      <CustomHooks />
       <Line />
     </div>
   </>
