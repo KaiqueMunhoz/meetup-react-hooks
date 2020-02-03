@@ -6,6 +6,7 @@ import Motivations from './ui/views/Motivations';
 import Rules from './ui/views/Rules';
 import UseState from './ui/views/UseState';
 import UseEffect from './ui/views/UseEffect';
+import UseMemo from './ui/views/UseMemo';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -24,6 +25,8 @@ const App = () => (
       <UseState />
       <Line />
       <UseEffect />
+      <Line />
+      <UseMemo />
       <Line />
     </div>
   </>
