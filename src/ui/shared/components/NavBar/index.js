@@ -3,26 +3,26 @@ import profileImage from '../../images/profile.png';
 
 const sections = [
   [
-    { content: 'SOBRE MIM', href: '#about' },
-    { content: 'MOTIVAÇÕES', href: '#motivations' },
-    { content: 'REGRAS', href: '#rules' },
+    { title: 'SOBRE MIM', href: '#about' },
+    { title: 'MOTIVAÇÕES', href: '#motivations' },
+    { title: 'REGRAS', href: '#rules' },
   ],
   [
-    { content: 'useState', href: '#useState' },
-    { content: 'useEffect', href: '#useEffect' },
+    { title: 'useState', href: '#useState' },
+    { title: 'useEffect', href: '#useEffect' },
   ],
   [
-    { content: 'useMemo', href: '#useMemo' },
-    { content: 'useCallback', href: '#useCallback' },
+    { title: 'useMemo', href: '#useMemo' },
+    { title: 'useCallback', href: '#useCallback' },
   ],
   [
-    { content: 'useReducer', href: '#useReducer' },
-    { content: 'useSelector', href: '#useSelector' },
-    { content: 'useDispatch', href: '#useDispatch' },
+    { title: 'useReducer', href: '#useReducer' },
+    { title: 'useSelector', href: '#useSelector' },
+    { title: 'useDispatch', href: '#useDispatch' },
   ],
   [
-    { content: 'CUSTOM HOOKS', href: '#customHooks' },
-    { content: 'REFERÊNCIAS', href: '#references' },
+    { title: 'CUSTOM HOOKS', href: '#customHooks' },
+    { title: 'REFERÊNCIAS', href: '#references' },
   ],
 ];
 
@@ -65,11 +65,11 @@ const NavBar = () => (
               <>
                 {section &&
                   section.map(each => {
-                    const { content, href } = each;
+                    const { title, href } = each;
                     return (
                       <li className="nav-item">
                         <a className="nav-link" href={href}>
-                          {content}
+                          {title}
                         </a>
                       </li>
                     );
