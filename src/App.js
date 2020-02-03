@@ -12,6 +12,7 @@ import UseReducer from './ui/views/UseReducer';
 import UseSelector from './ui/views/UseSelector';
 import UseDispatch from './ui/views/UseDispatch';
 import CustomHooks from './ui/views/CustomHooks';
+import References from './ui/views/References';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -42,6 +43,8 @@ const App = () => (
       <UseDispatch />
       <Line />
       <CustomHooks />
+      <Line />
+      <References />
       <Line />
     </div>
   </>
