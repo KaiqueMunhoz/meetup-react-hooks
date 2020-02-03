@@ -3,6 +3,7 @@ import React from 'react';
 //Views
 import About from './ui/views/About';
 import Motivations from './ui/views/Motivations';
+import Rules from './ui/views/Rules';
 
 //Components
 import NavBar from './ui/shared/components/NavBar';
@@ -15,6 +16,8 @@ const App = () => (
       <About />
       <Line />
       <Motivations />
+      <Line />
+      <Rules />
       <Line />
     </div>
   </>
