@@ -35,7 +35,6 @@ const Motivations = () => (
           />
         );
       })}
-    <Motivation />
   </Section>
 );
 
