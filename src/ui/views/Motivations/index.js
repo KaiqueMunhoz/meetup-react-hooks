@@ -12,12 +12,12 @@ const motivations = [
   },
   {
     title: 'Reuso',
-    subtitle: '',
+    subtitle: 'Menos HOC\'s e WrapperHell',
     description: '',
   },
   {
     title: 'Performace',
-    subtitle: '',
+    subtitle: 'useMemo | useCallback | funcional components',
     description: '',
   },
 ];
