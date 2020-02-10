@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import profileImage from '../../images/profile.png';
 
 const sections = [
@@ -26,7 +26,15 @@ const sections = [
   ],
 ];
 
-const NavBar = () => (
+const handleAnchorNavigation = (href, setShowImageProfile, anchorRef) => {
+  return href === '#about' ? setShowImageProfile(true) : setShowImageProfile(false)
+}
+
+const NavBar = () => {
+  const [showImageProfile, setShowImageProfile] = useState(false)
+  const anchorRef = useRef(null);
+
+  return (
   <nav
     className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
     id="sideNav"
@@ -34,7 +42,7 @@ const NavBar = () => (
     <div className="navbar-brand d-none d-lg-block">
       <h3 className="lighteen-primary">React Hooks</h3>
     </div>
-    <div className="navbar-brand">
+    <div className={`navbar-brand ${!showImageProfile && 'd-none'}`}>
       <span className="d-block d-lg-none">React Hooks</span>
       <span className="d-none d-lg-block">
         <img
@@ -68,7 +76,12 @@ const NavBar = () => (
                     const { title, href } = each;
                     return (
                       <li className="nav-item">
-                        <a className="nav-link" href={href}>
+                        <a
+                          ref={anchorRef}
+                          className="nav-link"
+                          href={href}
+                          onClick={() => handleAnchorNavigation(href, setShowImageProfile, anchorRef)}
+                        >
                           {title}
                         </a>
                       </li>
@@ -83,6 +96,6 @@ const NavBar = () => (
       </ul>
     </div>
   </nav>
-);
+)};
 
 export default NavBar;
