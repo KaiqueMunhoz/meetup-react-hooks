@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import Section from '../../shared/components/Section';
-import Rule from './Rule';
+import SubSection from '../../shared/components/SubSection';
 
 const rules = [
   {
@@ -22,7 +22,7 @@ const Rules = () => (
     {rules && rules.map(rule => {
       const { title, subtitle, description } = rule;
       return (
-        <Rule
+        <SubSection
           title={title}
           subtitle={subtitle}
           description={description}
