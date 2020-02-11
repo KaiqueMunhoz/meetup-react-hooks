@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Motivation = ({ title, subtitle, description }) => (
+const Rule = ({ title, subtitle, description }) => (
   <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
     <div className="resume-content">
       <h3 className="mb-0">{title}</h3>
@@ -10,4 +10,4 @@ const Motivation = ({ title, subtitle, description }) => (
   </div>
 );
 
-export default Motivation;
+export default Rule;
