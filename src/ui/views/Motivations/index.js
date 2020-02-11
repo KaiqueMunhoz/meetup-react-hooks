@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import Section from '../../shared/components/Section';
-import Motivation from './Motivation';
+import SubSection from '../../shared/components/SubSection';
 
 const motivations = [
   {
@@ -28,7 +28,7 @@ const Motivations = () => (
       motivations.map(motivation => {
         const { title, subtitle, description } = motivation;
         return (
-          <Motivation
+          <SubSection
             title={title}
             subtitle={subtitle}
             description={description}
