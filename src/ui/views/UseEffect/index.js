@@ -61,10 +61,10 @@ function UseStateLessComponent() {
 
 const UseEffect = () => (
   <Section id="useEffect" title="Use Effect">
-    <SubSection subtitle="Statefull Component">
+    <SubSection subtitle="Class Component">
       <StateFullComponent />
     </SubSection>
-    <SubSection subtitle="StateLess Component">
+    <SubSection subtitle="Functional Component">
       <UseStateLessComponent />
     </SubSection>
   </Section>
