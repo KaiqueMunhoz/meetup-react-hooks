@@ -3,7 +3,7 @@ import profileImage from '../../images/profile.png';
 
 const sections = [
   [
-    { title: 'SOBRE MIM', href: '#about' },
+    { title: 'SOBRE MIM', href: '#aboutMe' },
     { title: 'MOTIVAÇÕES', href: '#motivations' },
     { title: 'REGRAS', href: '#rules' },
   ],

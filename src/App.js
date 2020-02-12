@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Views
-import About from './ui/views/About';
+import AboutMe from './ui/views/AboutMe';
 import Motivations from './ui/views/Motivations';
 import Rules from './ui/views/Rules';
 import UseState from './ui/views/UseState';
@@ -22,7 +22,7 @@ const App = () => (
   <>
     <NavBar />
     <div className="container-fluid p-0">
-      <About />
+      <AboutMe />
       <Line />
       <Motivations />
       <Line />
