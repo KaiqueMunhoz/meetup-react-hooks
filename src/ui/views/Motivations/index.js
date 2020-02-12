@@ -17,7 +17,7 @@ const motivations = [
   },
   {
     title: 'Performace',
-    subtitle: 'useMemo | useCallback | funcional components',
+    subtitle: 'useMemo | useCallback | functional components',
     description: '',
   },
 ];
