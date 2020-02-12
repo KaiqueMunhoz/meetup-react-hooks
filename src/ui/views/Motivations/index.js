@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import Section from '../../shared/components/Section';
-import Motivation from './Motivation';
+import SubSection from '../../shared/components/SubSection';
 
 const motivations = [
   {
@@ -12,12 +12,12 @@ const motivations = [
   },
   {
     title: 'Reuso',
-    subtitle: '',
+    subtitle: 'Menos HOC\'s e WrapperHell',
     description: '',
   },
   {
     title: 'Performace',
-    subtitle: '',
+    subtitle: 'useMemo | useCallback | funcional components',
     description: '',
   },
 ];
@@ -28,14 +28,13 @@ const Motivations = () => (
       motivations.map(motivation => {
         const { title, subtitle, description } = motivation;
         return (
-          <Motivation
+          <SubSection
             title={title}
             subtitle={subtitle}
             description={description}
           />
         );
       })}
-    <Motivation />
   </Section>
 );
 
