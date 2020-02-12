@@ -40,10 +40,10 @@ const UseStateLessComponent = () => {
 
 const UseState = () => (
   <Section id="useState" title="Use State">
-    <SubSection subtitle="Statefull Component">
+    <SubSection subtitle="Class Component">
       <StateFullComponent />
     </SubSection>
-    <SubSection subtitle="StateLess Component">
+    <SubSection subtitle="Functional Component">
       <UseStateLessComponent />
     </SubSection>
   </Section>
