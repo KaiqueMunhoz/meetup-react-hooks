@@ -10,14 +10,24 @@ class StateFullComponent extends Component {
     this.state = {
       count: 0
     };
+    this.nv = null
   }
 
   componentDidMount() {
     document.title = `You clicked ${this.state.count} times`;
+    document.addEventListener('keydown', this.handleKeyPress);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyPress);
   }
 
   componentDidUpdate() {
     document.title = `You clicked ${this.state.count} times`;
+  }
+
+  handleKeyPress(e) {
+    console.log('StateFullComponent: Apertou a tecla', e.key);
   }
 
   render() {
@@ -37,7 +47,7 @@ function UseStateLessComponent() {
 
   useEffect(() => {
     document.title = `You clicked ${count} times`;
-  });
+  },[count]);
 
   return (
     <div>
