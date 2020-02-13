@@ -5,11 +5,10 @@ import Section from '../../shared/components/Section';
 import SubSection from '../../shared/components/SubSection';
 
 class StateFullComponent extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
   }
 
@@ -17,7 +16,10 @@ class StateFullComponent extends Component {
     return (
       <div>
         <p>You clicked {this.state.count} times</p>
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+        <button
+          className="btn btn-primary"
+          onClick={() => this.setState({ count: this.state.count + 1 })}
+        >
           Click me
         </button>
       </div>
@@ -31,12 +33,12 @@ const UseStateLessComponent = () => {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
+      <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
         Click me
       </button>
     </div>
-  )
-}
+  );
+};
 
 const UseState = () => (
   <Section id="useState" title="Use State">
