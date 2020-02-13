@@ -4,7 +4,8 @@ import SubSection from '../../shared/components/SubSection';
 
 const whatIsIt = [
   {
-    subtitle: "Uma forma de utilizar estado e métodos do ciclo de vida React...\n\"dentro de componentes funcionais\"",
+    subtitle:
+      'Uma forma de utilizar estado e métodos do ciclo de vida React...\n"dentro de componentes funcionais"',
   },
 ];
 
@@ -15,6 +16,7 @@ const AboutHooks = () => (
         const { title, subtitle, description } = item;
         return (
           <SubSection
+            key={title + subtitle + description}
             title={title}
             subtitle={subtitle}
             description={description}
