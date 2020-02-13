@@ -3,32 +3,41 @@ import React from 'react';
 // Components
 import Section from '../../shared/components/Section';
 import SubSection from '../../shared/components/SubSection';
+import InsideAReactFunction from './InsideAReactFunction';
+import InTheBeginning from './InTheBeginning';
 
 const rules = [
   {
-    title: 'Only Call Hooks at the Top Level',
-    subtitle: 'Don’t call Hooks inside loops, conditions, or nested functions.',
-    description: 'Instead, always use Hooks at the top level of your React function. By following this rule, you ensure that Hooks are called in the same order each time a component renders. That’s what allows React to correctly preserve the state of Hooks between multiple useState and useEffect calls. (If you’re curious, we’ll explain this in depth below.)',
+    title: 'Use Hooks Apenas no começo ou na parte superior das funções',
+    subtitle:
+      'Não use Hooks dentro de loops, regras condicionais ou funções aninhadas',
+    description:
+      'Isso garante que os Hooks serão chamados na mesma ordem a cada vez que o componente renderizar.',
   },
   {
-    title: 'Only Call Hooks from React Functions',
-    subtitle: 'Don’t call Hooks from regular JavaScript functions. ',
-    description: 'Instead, you can: \n- Call Hooks from React function components \n- Call Hooks from custom Hooks (we’ll learn about them on the next page).',
-  }
+    title: 'Use Hooks Apenas Dentro de Funções do React',
+    subtitle: 'Não use Hooks dentro de funções JavaScript comuns.',
+    description:
+      '- Chamar Hooks em componentes funcionais React; \n- Chamar Hooks dentro de Hooks Customizados',
+  },
 ];
 
 const Rules = () => (
   <Section id="rules" title="Regras">
-    {rules && rules.map(rule => {
-      const { title, subtitle, description } = rule;
-      return (
-        <SubSection
-          title={title}
-          subtitle={subtitle}
-          description={description}
-        />
-      );
-    })}
+    {rules &&
+      rules.map(rule => {
+        const { title, subtitle, description } = rule;
+        return (
+          <SubSection
+            title={title}
+            subtitle={subtitle}
+            description={description}
+          >
+            <InsideAReactFunction />
+            <InTheBeginning />
+          </SubSection>
+        );
+      })}
   </Section>
 );
 
