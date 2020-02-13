@@ -63,12 +63,12 @@ const NavBar = () => (
           sections.map((section, index) => {
             const lastSection = sections.length - 1;
             return (
-              <>
+              <div key={index}>
                 {section &&
-                  section.map(each => {
+                  section.map((each, index) => {
                     const { title, href } = each;
                     return (
-                      <li className="nav-item">
+                      <li key={title + href + index} className="nav-item">
                         <a className="nav-link" href={href}>
                           {title}
                         </a>
@@ -78,7 +78,7 @@ const NavBar = () => (
                 {index !== lastSection && (
                   <span className="lighteen-primary">--------------------</span>
                 )}
-              </>
+              </div>
             );
           })}
       </ul>

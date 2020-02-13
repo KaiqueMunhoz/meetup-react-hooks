@@ -29,6 +29,7 @@ const Rules = () => (
         const { title, subtitle, description } = rule;
         return (
           <SubSection
+            key={title + subtitle + description}
             title={title}
             subtitle={subtitle}
             description={description}
