@@ -6,9 +6,9 @@ import SubSection from '../../shared/components/SubSection';
 import ClassComponent from './components/ClassComponent';
 import FunctionalComponent from './components/FunctionalComponent';
 
-const UseSelector = () => {
+const Redux = () => {
   return (
-    <Section id="useSelector" title="Use Selector">
+    <Section id="redux" title="Use Selector">
       <SubSection subtitle="Class Component">
         <ClassComponent />
       </SubSection>
@@ -19,4 +19,4 @@ const UseSelector = () => {
   );
 };
 
-export default UseSelector;
+export default Redux;

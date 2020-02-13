@@ -17,10 +17,7 @@ const sections = [
     { title: 'useCallback', href: '#useCallback' },
   ],
   [
-    { title: 'useSelector', href: '#useSelector' },
-    { title: 'useDispatch', href: '#useDispatch' },
-  ],
-  [
+    { title: 'REDUX', href: '#redux' },
     { title: 'CUSTOM HOOKS', href: '#customHooks' },
     { title: 'REFERÊNCIAS', href: '#references' },
   ],
