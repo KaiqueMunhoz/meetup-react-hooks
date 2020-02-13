@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Redux
+import store from './store';
+import { Provider } from 'react-redux';
+
 //Views
 import AboutMe from './ui/views/AboutMe';
 import Introduction from './ui/views/Introduction';
@@ -20,7 +24,7 @@ import NavBar from './ui/shared/components/NavBar';
 import Line from './ui/shared/components/Line';
 
 const App = () => (
-  <>
+  <Provider store={store}>
     <NavBar />
     <div className="container-fluid p-0">
       <AboutMe />
@@ -50,7 +54,7 @@ const App = () => (
       <References />
       <Line />
     </div>
-  </>
+  </Provider>
 );
 
 export default App;
