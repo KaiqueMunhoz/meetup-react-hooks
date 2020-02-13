@@ -13,7 +13,6 @@ import UseState from './ui/views/UseState';
 import UseEffect from './ui/views/UseEffect';
 import UseMemo from './ui/views/UseMemo';
 import UseCallback from './ui/views/UseCallback';
-import UseReducer from './ui/views/UseReducer';
 import UseSelector from './ui/views/UseSelector';
 import UseDispatch from './ui/views/UseDispatch';
 import CustomHooks from './ui/views/CustomHooks';
@@ -42,8 +41,6 @@ const App = () => (
       <UseMemo />
       <Line />
       <UseCallback />
-      <Line />
-      <UseReducer />
       <Line />
       <UseSelector />
       <Line />
