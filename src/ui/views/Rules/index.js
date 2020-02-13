@@ -4,7 +4,6 @@ import React from 'react';
 import Section from '../../shared/components/Section';
 import SubSection from '../../shared/components/SubSection';
 import InsideAReactFunction from './components/InsideAReactFunction';
-import InTheBeginning from './components/InTheBeginning';
 
 const rules = [
   {
@@ -35,7 +34,6 @@ const Rules = () => (
             description={description}
           >
             <InsideAReactFunction />
-            <InTheBeginning />
           </SubSection>
         );
       })}
