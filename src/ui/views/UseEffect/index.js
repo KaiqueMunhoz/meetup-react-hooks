@@ -17,7 +17,7 @@ class ClassComponentDidMount extends Component {
       const { data: { joke = '' } = {} } = await axios.get('/');
       this.setState({ description: joke });
     } catch (error) {
-      console.warn(`A error occur ${error} on ClassComponentDidMount`);
+      console.warn(`Um erro ocorreu no ClassComponentDidMount ${error}`);
     }
   }
 
@@ -37,7 +37,7 @@ function UseFunctionalComponentDidMount() {
         setDescription(joke);
       } catch (error) {
         console.warn(
-          `A error occur ${error} on UseFunctionalComponentDidMount`
+          `Um erro ocorreu no UseFunctionalComponentDidMount ${error}`
         );
       }
     }

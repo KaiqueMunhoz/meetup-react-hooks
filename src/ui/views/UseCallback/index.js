@@ -84,6 +84,7 @@ const UseCallback = () => {
         <ClassComponent />
       </SubSection>
       <hr />
+      <hr />
       <SubSection subtitle="Functional Component">
         <UseFunctionalComponent />
       </SubSection>
