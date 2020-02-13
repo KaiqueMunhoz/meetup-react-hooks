@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 
 // Reducers
-import jokesReducer from './jokesReducer';
+import jokes from './jokesReducer';
+import number from './numberReducer';
 
 export default combineReducers({
-  jokesReducer,
+  jokes,
+  number,
 });
