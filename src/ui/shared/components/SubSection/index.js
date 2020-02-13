@@ -9,7 +9,7 @@ const SubSection = ({ title, subtitle, description, children }) => (
           {subtitle}
         </div>
       )}
-      {description && <p>{description}</p>}
+      {description && <p style={{ whiteSpace: 'pre' }}>{description}</p>}
       {children}
     </div>
   </div>
