@@ -22,10 +22,10 @@ const socialMedias = [
   'Twitter: https://twitter.com/kaique_munhoz',
 ];
 
-const About = () => (
+const AboutMe = () => (
   <section
     className="resume-section p-3 p-lg-5 d-flex align-items-center"
-    id="about"
+    id="aboutMe"
   >
     <div className="w-100">
       <Title blackContent="Kaique" blueContent="Munhoz" />
@@ -37,4 +37,4 @@ const About = () => (
   </section>
 );
 
-export default About;
+export default AboutMe;

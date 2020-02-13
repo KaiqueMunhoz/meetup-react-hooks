@@ -4,8 +4,8 @@ const Topics = ({ title, topics }) => (
     <div className="subheading mb-3">{title}</div>
     <ul className="fa-ul mb-0">
       {topics &&
-        topics.map(topic => (
-          <li>
+        topics.map((topic, index) => (
+          <li key={topic + index}>
             <i className="fa-li fa fa-check">{topic}</i>
           </li>
         ))}

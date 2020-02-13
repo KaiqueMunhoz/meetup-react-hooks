@@ -3,7 +3,8 @@ import profileImage from '../../images/profile.png';
 
 const sections = [
   [
-    { title: 'SOBRE MIM', href: '#about' },
+    { title: 'SOBRE MIM', href: '#aboutMe' },
+    { title: 'INTRODUÇÃO', href: '#introduction' },
     { title: 'MOTIVAÇÕES', href: '#motivations' },
     { title: 'REGRAS', href: '#rules' },
   ],
@@ -16,11 +17,7 @@ const sections = [
     { title: 'useCallback', href: '#useCallback' },
   ],
   [
-    { title: 'useReducer', href: '#useReducer' },
-    { title: 'useSelector', href: '#useSelector' },
-    { title: 'useDispatch', href: '#useDispatch' },
-  ],
-  [
+    { title: 'REDUX', href: '#redux' },
     { title: 'CUSTOM HOOKS', href: '#customHooks' },
     { title: 'REFERÊNCIAS', href: '#references' },
   ],
@@ -62,22 +59,22 @@ const NavBar = () => (
           sections.map((section, index) => {
             const lastSection = sections.length - 1;
             return (
-              <>
+              <div key={index}>
                 {section &&
-                  section.map(each => {
+                  section.map((each, index) => {
                     const { title, href } = each;
                     return (
-                      <li className="nav-item">
+                      <li key={title + href + index} className="nav-item">
                         <a className="nav-link" href={href}>
                           {title}
                         </a>
                       </li>
                     );
                   })}
-                {index != lastSection && (
+                {index !== lastSection && (
                   <span className="lighteen-primary">--------------------</span>
                 )}
-              </>
+              </div>
             );
           })}
       </ul>
