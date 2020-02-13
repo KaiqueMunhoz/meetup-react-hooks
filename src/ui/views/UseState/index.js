@@ -4,37 +4,35 @@ import React, { useState, Component } from 'react';
 import Section from '../../shared/components/Section';
 import SubSection from '../../shared/components/SubSection';
 
-class StateFullComponent extends Component {
+class ClassComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      count: 0,
-    };
+    this.state = { count: 0 };
   }
 
   render() {
     return (
       <div>
-        <p>You clicked {this.state.count} times</p>
+        <p>Voce clicou {this.state.count} vezes</p>
         <button
           className="btn btn-primary"
           onClick={() => this.setState({ count: this.state.count + 1 })}
         >
-          Click me
+          Clique
         </button>
       </div>
     );
   }
 }
 
-const UseStateLessComponent = () => {
+const UseFunctionalComponent = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <p>You clicked {count} times</p>
+      <p>Voce clicou {count} vezes</p>
       <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
-        Click me
+        Clique
       </button>
     </div>
   );
@@ -43,10 +41,10 @@ const UseStateLessComponent = () => {
 const UseState = () => (
   <Section id="useState" title="Use State">
     <SubSection subtitle="Class Component">
-      <StateFullComponent />
+      <ClassComponent />
     </SubSection>
     <SubSection subtitle="Functional Component">
-      <UseStateLessComponent />
+      <UseFunctionalComponent />
     </SubSection>
   </Section>
 );
