@@ -9,8 +9,8 @@ const whatIsIt = [
   },
 ];
 
-const AboutHooks = () => (
-  <Section id="aboutHooks" title="O que é React Hooks?">
+const Introduction = () => (
+  <Section id="introduction" title="O que é React Hooks?">
     {whatIsIt &&
       whatIsIt.map(item => {
         const { title, subtitle, description } = item;
@@ -26,4 +26,4 @@ const AboutHooks = () => (
   </Section>
 );
 
-export default AboutHooks;
+export default Introduction;
