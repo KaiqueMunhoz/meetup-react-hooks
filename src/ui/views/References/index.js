@@ -14,6 +14,7 @@ const articles = [
   'Documentation: https://reactjs.org/docs/hooks-intro.html',
   'React Hooks CheatSheet: https://react-hooks-cheatsheet.com',
   'React Hooks: Why We should Embrace it: https://medium.com/@jackyef/react-hooks-why-we-should-embrace-it-86e408663ad6',
+  'When is React’s useMemo hook actually worth it?: https://tsh.io/blog/usememo-performance-in-react-test-and-examples',
 ];
 
 const References = () => (
