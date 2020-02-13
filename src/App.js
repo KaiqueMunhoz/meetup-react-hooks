@@ -2,7 +2,7 @@ import React from 'react';
 
 //Views
 import AboutMe from './ui/views/AboutMe';
-import AboutHooks from './ui/views/AboutHooks';
+import Introduction from './ui/views/Introduction';
 import Motivations from './ui/views/Motivations';
 import Rules from './ui/views/Rules';
 import UseState from './ui/views/UseState';
@@ -25,7 +25,7 @@ const App = () => (
     <div className="container-fluid p-0">
       <AboutMe />
       <Line />
-      <AboutHooks />
+      <Introduction />
       <Line />
       <Motivations />
       <Line />

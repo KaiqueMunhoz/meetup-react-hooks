@@ -4,7 +4,7 @@ import profileImage from '../../images/profile.png';
 const sections = [
   [
     { title: 'SOBRE MIM', href: '#aboutMe' },
-    { title: 'SOBRE HOOKS', href: '#aboutHooks' },
+    { title: 'INTRODUÇÃO', href: '#introduction' },
     { title: 'MOTIVAÇÕES', href: '#motivations' },
     { title: 'REGRAS', href: '#rules' },
   ],
