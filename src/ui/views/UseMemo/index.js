@@ -92,7 +92,7 @@ const UseMemo = () => (
       <ClassComponent />
     </SubSection>
     <hr />
-    <hr />
+
     <SubSection subtitle="Functional Component">
       <UseFunctionalComponent />
     </SubSection>
