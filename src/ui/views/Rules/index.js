@@ -3,8 +3,8 @@ import React from 'react';
 // Components
 import Section from '../../shared/components/Section';
 import SubSection from '../../shared/components/SubSection';
-import InsideAReactFunction from './InsideAReactFunction';
-import InTheBeginning from './InTheBeginning';
+import InsideAReactFunction from './components/InsideAReactFunction';
+import InTheBeginning from './components/InTheBeginning';
 
 const rules = [
   {
