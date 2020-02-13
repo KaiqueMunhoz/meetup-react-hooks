@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
+import axios from '../../../config/axios';
 
 // Components
 import Section from '../../shared/components/Section';
@@ -8,42 +9,42 @@ import SubSection from '../../shared/components/SubSection';
 class ClassComponentDidMount extends Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0 };
+    this.state = { description: '' };
   }
 
-  componentDidMount() {
-    // Melhorar
-    document.title = `ClassComponent`;
+  async componentDidMount() {
+    try {
+      const { data: { joke = '' } = {} } = await axios.get('/');
+      this.setState({ description: joke });
+    } catch (error) {
+      console.warn(`A error occur ${error} on ClassComponentDidMount`);
+    }
   }
 
   render() {
-    return (
-      <div>
-        <button
-          className="btn btn-primary"
-          onClick={() => this.setState({ count: this.state.count + 1 })}
-        >
-          Clique
-        </button>
-      </div>
-    );
+    const { description } = this.state;
+    return description;
   }
 }
 
 function UseFunctionalComponentDidMount() {
-  const [count, setCount] = useState(0);
+  const [description, setDescription] = useState('');
 
   useEffect(() => {
-    document.title = `FunctionalComponent`;
+    async function fetchData() {
+      try {
+        const { data: { joke = '' } = {} } = await axios.get('/');
+        setDescription(joke);
+      } catch (error) {
+        console.warn(
+          `A error occur ${error} on UseFunctionalComponentDidMount`
+        );
+      }
+    }
+    fetchData();
   }, []);
 
-  return (
-    <div>
-      <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
-        Clique
-      </button>
-    </div>
-  );
+  return description;
 }
 
 // Second
