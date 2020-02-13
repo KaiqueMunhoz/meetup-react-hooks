@@ -27,7 +27,7 @@ const CustomHooks = () => (
             title={title}
             subtitle={subtitle}
             description={description}
-          ></SubSection>
+          />
         );
       })}
   </Section>
