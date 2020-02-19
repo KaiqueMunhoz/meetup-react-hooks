@@ -1,7 +1,7 @@
 # Meetup React Hooks
 
-In this application, we developed a way to organize our books. The app has a few bookshelves, and we can move a book to a specific shelf, showing if we already read or are reading or wanna read.
-Another feature of this project was the search page, that can find books by keywords.
+In this application, I developed a software to show how to use React-Hooks. This software has a few examples of the new way of use state compared with the old way.
+If you want to understand better these examples, open the file with the name of functionality that you expect to learn.
 
 ## Knowledge Prerequisites
 
